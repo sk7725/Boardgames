@@ -1,5 +1,5 @@
 const presstick=4; const timerid=0; const blocksize=Vars.tilesize;
-const powpp = extendContent(Block, "pow-pp", {
+const powpb = extendContent(Block, "pow-pb", {
   placed(tile) {
     this.super$placed(tile);
     tile.ent().timer.reset(timerid,presstick+1);
