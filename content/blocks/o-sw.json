@@ -1,0 +1,10 @@
+{
+	"type": "Wall",
+	"health": 40,
+	"size": 1,
+	"requirements": [
+		{ "item": "lead", "amount": 6 }
+	],
+	"category": "defense"
+	"research": "copper-wall"
+}

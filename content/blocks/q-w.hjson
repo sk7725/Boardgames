@@ -1,0 +1,9 @@
+
+size: 1
+breakable: true
+update: true
+category: defense
+requirements: [
+  lead/12
+]
+rotate: true

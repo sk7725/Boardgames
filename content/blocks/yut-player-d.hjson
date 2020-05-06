@@ -1,0 +1,12 @@
+
+size: 1
+breakable: true
+update: true
+category: effect
+requirements: [
+  silicon/16
+]
+configurable: true
+layer: overlay
+sync: true
+expanded: true
