@@ -59,10 +59,10 @@ const yutplayerd=extendContent(MessageBlock,"yut-player-d",{
         table.row();
         table.addImageButton(Icon.players,run(() => {
           tile.configure(-1);
-        })).size(ts);
+        })).size(40);
         table.addImageButton(Icon.commandRally,run(() => {
           tile.configure(0);
-        })).size(ts);
+        })).size(40);
         //table.row();
         //table.add().size(ts);
         this.super$buildConfiguration(tile,table);
