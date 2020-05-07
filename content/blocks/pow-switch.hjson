@@ -1,0 +1,16 @@
+
+size: 1
+breakable: true
+//consumesTap: true
+timers: 1
+update: true
+category: effect
+requirements: [
+surge-alloy/1000
+silicon/1000
+]
+sync: true
+expanded: true
+health: 3000
+targetable: false
+solid: false
