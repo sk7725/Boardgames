@@ -18,7 +18,7 @@ const powswitch = extendContent(Block, "pow-switch", {
     this.halfRegion.push(Core.atlas.find(this.name+"-1"));
     this.topRegion=Core.atlas.find(this.name+"-top");
     //this.baseRegion=;
-  }
+  },
   /*
 	generateIcons() {
 		return [Core.atlas.find(this.name)];
