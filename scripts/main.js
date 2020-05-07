@@ -8,3 +8,4 @@ require("yut-player-d");
 require("yut-throw");
 
 require("pow-switch");
+require("stop-right-there");
