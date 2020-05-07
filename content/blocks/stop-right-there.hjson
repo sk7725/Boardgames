@@ -1,0 +1,7 @@
+size: 1
+breakable: true
+category: effect
+requirements: [
+copper/1
+]
+sync: true
