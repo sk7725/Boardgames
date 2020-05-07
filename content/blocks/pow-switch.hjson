@@ -14,3 +14,4 @@ expanded: true
 health: 3000
 targetable: false
 solid: false
+layer: overlay

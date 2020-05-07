@@ -1,16 +1,20 @@
 //credits to DeltaNedas
-const presstick=60; const timerid=0; const blocksize=Vars.tilesize;
+const presstick=90; const timerid=0; const blocksize=Vars.tilesize;
 var alive = {};
 
 const powswitch = extendContent(Block, "pow-switch", {
 	draw(tile) {
 		Draw.rect(this.halfRegion[tile.x%2], tile.drawx(), tile.drawy());
+	},
+  drawLayer(tile){
     if(tile.x%2==0){
-      Draw.color(Color.valueOf("ff0000").shiftHue(Time.time() * 2.0).a(tile.ent().timer.getTime(timerid)/presstick));
+      var t=tile.ent().timer.getTime(timerid);
+      if(t>presstick) t=presstick;
+      Draw.color(Color.valueOf("ff5555").shiftHue(Time.time() * 2.0).a((presstick-t)/presstick));
       Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
       Draw.color();
     }
-	},
+  },
   load(){
     this.super$load();
     this.halfRegion=[];

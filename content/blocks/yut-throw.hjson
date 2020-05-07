@@ -6,6 +6,6 @@ requirements: [
   silicon/20
 ]
 configurable: true
-layer: overlay
+layer: power
 sync: true
 timers: 1
