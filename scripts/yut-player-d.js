@@ -157,6 +157,7 @@ const yutplayerd=extendContent(MessageBlock,"yut-player-d",{
         var floor=tileon.floor().name;
         if(floor=="ice"||floor=="snow"||floor=="ice-snow"||floor=="boardgames-yut-road") this.configured(tile,null,tile.ent().getLast());
       }
+      catch(err){}
     }
     //TODO:table, draw
 });
