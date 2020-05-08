@@ -137,11 +137,14 @@ const yutplayer=extendContent(MessageBlock,"yut-player",{
     update(tile){
       this.super$update(tile);
       var offset=tile.ent().getPos();
-      var tileon=Vars.world.tile(tile.x+offset.x,tile.y+offset.y);
-      if(tileon.block().name=="boardgames-buttonpad") tileon.block().unitOn(tileon,null);
-      if(tileon.block().rotate) tile.ent().movePos(((tileon.rotation()-1)%2)*-1,((tileon.rotation()-2)%2)*-1);
-      var floor=tileon.floor().name;
-      if(floor=="ice"||floor=="snow"||floor=="ice-snow"||floor=="boardgames-yut-road") tile.configure(tile.ent().getLast());
+      try{
+        var tileon=Vars.world.tile(tile.x+offset.x,tile.y+offset.y);
+        if(tileon.block().name=="boardgames-buttonpad") tileon.block().unitOn(tileon,null);
+        if(tileon.block().rotate) tile.ent().movePos(((tileon.rotation()-1)%2)*-1,((tileon.rotation()-2)%2)*-1);
+        var floor=tileon.floor().name;
+        if(floor=="ice"||floor=="snow"||floor=="ice-snow"||floor=="boardgames-yut-road") this.configured(tile,null,tile.ent().getLast());
+      }
+      catch(err){}
     }
     //TODO:table, draw
 });
