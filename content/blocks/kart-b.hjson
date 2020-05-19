@@ -1,0 +1,15 @@
+
+size: 2
+breakable: true
+//consumesTap: true
+timers: 1
+update: true
+category: upgrade
+requirements: [
+  metaglass/30
+  phase-fabric/50
+]
+sync: true
+health: 300
+targetable: false
+solid: false
